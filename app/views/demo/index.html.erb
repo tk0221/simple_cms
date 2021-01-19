@@ -1,2 +1,18 @@
 <h1>Demo#index</h1>
 <p>Hello, World!</p>
+
+
+<a href="/demo/hello">Hello page 1</a><br />
+<%= link_to("Hello page 2", {:action => 'hello'}) %>
+
+<br />
+<br />
+<br />
+
+<%= link_to("UK contact", {:action => 'contact_us', :country => 'uk', :id => 20}) %><br />
+
+<%= link_to("US contact", {:action => 'contact_us', :country => 'us', :id => 20}) %><br />
+
+<%= link_to("CA contact", {:action => 'contact_us', :country => 'ca', :id => 20}) %><br />
+
+<%= link_to("Global contact", {:action => 'contact_us', :country => 'global', :id => 20}) %><br />

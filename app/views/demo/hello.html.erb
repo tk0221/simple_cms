@@ -1,2 +1,30 @@
 <h1>Demo#Hello</h1>
 <p>Hello, World!</p>
+
+<% 3 + 3 %>
+
+<br />
+
+<%= 1 + 1 %>
+
+<br />
+
+<% name = 'taehun' %>
+<%= "Hello #{name}" %>
+
+<br />
+
+<% @array.each do |n| %>
+  <p><%= n %></p>
+<% end %>
+
+<br />
+
+<%= link_to("Index page", {:action => 'index'}) %>
+
+<br />
+
+ID: <%= @id %><br />
+ID: <%= params[:id] %><br />
+Page: <%= @page %><br />
+Next Page: <%= @page.to_i + 1 %><br />
